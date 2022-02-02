@@ -1,3 +1,7 @@
+1.6.1 (EMD)
+* adding Graviex Exchange markets
+* adding FreiExchange markets
+
 1.6.1
 * fixed last_txs setting
 * added hashrate_units setting

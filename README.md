@@ -2,17 +2,20 @@ Iquidus Explorer - 1.6.1
 ================
 
 An open source block explorer written in node.js.
+Working with
+
+*  [FreiExchange](https://https://freiexchange.com/market/EMD/BTC)
+*  [Graviex Exchange](https://graviex.net/markets/emdbtc)
 
 ### See it in action
 
 *  [Deutsche eMark](http://b.emark.tk/)
-*  [Sphere](http://sphere.iquidus.io)
-*  [Vertcoin](http://explorer.vertcoin.info/)
 *  [Vivo](http://vivo.explorerz.top:3003)
-*  [Florincoin](https://florincoin.info/info)
+*  [Florincoin](https://florincoin.info)
+*  [Mazacoin](https://mazacha.in)
 *  [Maxcoin Explorer 1](https://explorer.maxcoinproject.net/)
 *  [Maxcoin Explorer 2](https://explorer2.maxcoinproject.net/)
-*  [Emerald Crypto](https://www.emeraldcrypto.de/)
+*  [Emerald Crypto](https://explorer.emeraldcrypto.de/)
 
 
 *note: If you would like your instance mentioned here contact me*
@@ -43,7 +46,7 @@ Create user with read/write access:
 
 ### Get the source
 
-    git clone https://github.com/iquidus/explorer explorer
+    git clone https://github.com/Crypto-Currency/Emerald-Block-Explorer
 
 ### Install node modules
 
