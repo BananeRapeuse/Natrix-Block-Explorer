@@ -1,3 +1,8 @@
+1.7.3 (EMD)
+* adding Graviex Exchange market
+* adding FreiExchange market
+* adding Unnamed Exchange market
+
 1.7.3
 * Fixes for Historical Address Balance - seems to be fastest method that works along-side parallel indexing
 * New settings to optionally show market cap in header: show_market_cap and show_market_cap_over_price

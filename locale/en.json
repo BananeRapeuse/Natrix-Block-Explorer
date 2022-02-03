@@ -135,9 +135,12 @@
     "yobit": "Yobit",
     "empoex": "Empoex",
     "cryptsy": "Cryptsy",
+    "graviex": "Graviex",
+    "unnamed": "Unnamed",
     "ccex": "C-Cex",
     "crex": "Crex24",
     "tradesatoshi": "TradeSatoshi",
+    "freiexchange": "FreiExchange",
 
     // Heavy rewards view
     "heavy_title": "Reward/voting information",

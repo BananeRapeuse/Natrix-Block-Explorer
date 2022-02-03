@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "Emerald Crypto",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "Emerald Crypto",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "EMD",
 
   // logo
   "logo": "/images/logo.png",
@@ -50,9 +50,9 @@
 
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "username": "darkcoinrpc",
-    "password": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 12128,
+    "username": "rpcuser",
+    "password": "rpcpassword"
   },
 
   // confirmations
@@ -67,7 +67,7 @@
     "markets": true,
     "richlist": true,
     "twitter": true,
-    "facebook": false,
+    "facebook": true,
     "googleplus": false,
     "youtube": false,
     "search": true,
@@ -90,20 +90,19 @@
   // ensure links on API page are valid
   "api": {
     "blockindex": 1337,
-    "blockhash": "1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1",
-    "txhash": "f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e",
-    "address": "RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb"
+    "blockhash": "8ac0db603f1b60ac8767c2ef0f3bbab67e105b65fe194536742b513c24dfd9be",
+    "txhash": "75802aa8a41d2f6ff15c78cceb383e5abe68fd1e996972138fe8783f5ba92e3c",
+    "address": "EquYbGjxFFBLM8JUeJG5sgTcg7MndtoKuh"
   },
 
   // market settings
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, ccex
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "JBS",
+    "coin": "EMD",
     "exchange": "BTC",
-    "enabled": ["bittrex"],
-    "ccex_key" : "Get-Your-Own-Key",
-    "default": "bittrex"
+    "enabled": ["freiexchange", "graviex"],
+    "default": "freiexchange"
   },
 
   // richlist/top100 settings
@@ -123,14 +122,14 @@
   },
 
   // twitter, facebook, googleplus, youtube
-  "twitter": "iquidus",
-  "facebook": "yourfacebookpage",
+  "twitter": "i_emerald_EMD_",
+  "facebook": "EmeraldCryptoCoin",
   "googleplus": "yourgooglepluspage",
   "youtube": "youryoutubechannel",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "a66be980713959b05c01a408aac595e3f5ed029eace6e053c553cf2129ca4c92",
+  "genesis_block": "b297ecb2a87e6a306d0c2bbdbd0402cbb53368c74ac9ed2296c4a7815e599f1c",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -168,6 +167,9 @@
   // type (optional) = class of label, valid types: default, primary, warning, danger, success
   // url (optional) = url to link to for more information
   "labels": {
+
+  "EnJnzAQSpPp7RshMhNx9zhRnabxTLird6W": {"label": "Donations", "type":"primary",  "url":"https://www.emeraldcrypto.de"},
+  "EnMcky7NAEaJUEDS5DfG4J6VQ4So66XDqK": {"label": "Cryptopia", "type":"primary"}          
   //  "JSoEdU717hvz8KQVq2HfcqV9A79Wihzusu": {"label": "Developers address", "type":"primary", "url":"http://example.com"},
   //  "JSWVXHWeYNknPdG9uDrcBoZHztKMFCsndw": {"label": "Cryptsy"}
   }

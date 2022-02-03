@@ -3,6 +3,12 @@ Iquidus Explorer - 1.7.3
 
 An open source block explorer written in node.js.
 
+Working with these EMD exchanges
+
+*  [FreiExchange](https://freiexchange.com/market/EMD/BTC)
+*  [Graviex Exchange](https://graviex.net/markets/emdbtc)
+*  [Unnamed Exchange](https://www.unnamed.exchange/Exchange/Basic?market=EMD_BTC)
+
 ### See it in action
 
 *  [List of live explorers running Iquidus](https://github.com/iquidus/explorer/wiki/Live-Explorers)
