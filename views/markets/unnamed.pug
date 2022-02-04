@@ -5,7 +5,7 @@ block market_view
     .col-md-12  
       .card.card-default
         .card-header
-          strong #{settings.locale.freiexchange} - #{marketdata.coin}/#{marketdata.exchange} - #{settings.locale.mkt_hours}
+          strong #{settings.locale.unnamed} - #{marketdata.coin}/#{marketdata.exchange} - #{settings.locale.mkt_hours}
           a(href='#')
             span.fa.fa-line-chart.pull-right.view-chart-disabled.iquidus.market-toggle(data-toggle='tooltip', data-placement='bottom', title=settings.locale.mkt_no_chart) 
         table.table.table-bordered.summary-table 
@@ -17,6 +17,7 @@ block market_view
               th.d-none.d-sm-block #{settings.locale.mkt_top_bid}
               th.d-none.d-sm-block #{settings.locale.mkt_top_ask}
               th.d-none.d-sm-block #{settings.locale.mkt_last}
+              th #{settings.locale.mkt_change}
           tbody
             tr
               td #{marketdata.data.summary.high}
@@ -25,6 +26,11 @@ block market_view
               td.d-none.d-sm-block #{marketdata.data.summary.bid}
               td.d-none.d-sm-block #{marketdata.data.summary.ask}
               td.d-none.d-sm-block #{marketdata.data.summary.last}
+              - var unnamed_change = parseFloat(marketdata.data.summary.change).toFixed(4).replace(/(?:\.0+|(\.\d+?)0+)$/, "$1");
+              if unnamed_change >= 0
+                td.success +#{unnamed_change} %
+              else
+                td.danger #{unnamed_change} %
   .row
     .col-md-6.col-xs-12
       .card.card-default

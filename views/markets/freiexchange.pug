@@ -17,6 +17,7 @@ block market_view
               th.d-none.d-sm-block #{settings.locale.mkt_top_bid}
               th.d-none.d-sm-block #{settings.locale.mkt_top_ask}
               th.d-none.d-sm-block #{settings.locale.mkt_last}
+              th #{settings.locale.mkt_change}
           tbody
             tr
               td #{marketdata.data.summary.high}
@@ -25,6 +26,11 @@ block market_view
               td.d-none.d-sm-block #{marketdata.data.summary.bid}
               td.d-none.d-sm-block #{marketdata.data.summary.ask}
               td.d-none.d-sm-block #{marketdata.data.summary.last}
+              - var freiexchange_change = parseFloat(marketdata.data.summary.change).toFixed(4).replace(/(?:\.0+|(\.\d+?)0+)$/, "$1");
+              if freiexchange_change >= 0
+                td.success +#{freiexchange_change} %
+              else
+                td.danger #{freiexchange_change} %
   .row
     .col-md-6.col-xs-12
       .card.card-default
