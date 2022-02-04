@@ -1,4 +1,4 @@
-Iquidus Explorer - 1.7.3
+Iquidus Explorer - 1.7.3.emd
 ================
 
 An open source block explorer written in node.js.
@@ -42,7 +42,7 @@ Create user with read/write access:
 
 ### Get the source
 
-    git clone https://github.com/iquidus/explorer explorer
+    git clone https://github.com/Crypto-Currency/Emerald-Block-Explorer.git
 
 ### Install node modules
 
