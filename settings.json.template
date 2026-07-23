@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "Emerald Crypto",
+  "title": "Natrix Crypto",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Emerald Crypto",
+  "coin": "Natrix Crypto",
 
   // coin symbol
-  "symbol": "EMD",
+  "symbol": "NTX",
 
   // logo
   "logo": "/images/logo.png",
@@ -24,9 +24,9 @@
   // Uses bootswatch themes (http://bootswatch.com/)
   // Valid options:
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
-  //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
+  //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti, Litera
   // theme (see /public/themes for available themes)
-  "theme": "Cyborg",
+  "theme": "Litera",
 
   // port to listen for requests on.
   "port" : 3001,
@@ -46,13 +46,13 @@
   "block_parallel_tasks": 1,
 
   // wallet settings
-  "use_rpc": false,
+  "use_rpc": true,
 
   "wallet": {
     "host": "localhost",
-    "port": 12128,
-    "username": "rpcuser",
-    "password": "rpcpassword"
+    "port": 17777,
+    "username": "user",
+    "password": "password"
   },
 
   // confirmations
@@ -65,9 +65,9 @@
   "display": {
     "api": true,
     "markets": true,
-    "richlist": true,
+    "richlist": false,
     "twitter": true,
-    "facebook": true,
+    "facebook": false,
     "googleplus": false,
     "youtube": false,
     "search": true,
@@ -89,17 +89,17 @@
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "8ac0db603f1b60ac8767c2ef0f3bbab67e105b65fe194536742b513c24dfd9be",
-    "txhash": "75802aa8a41d2f6ff15c78cceb383e5abe68fd1e996972138fe8783f5ba92e3c",
-    "address": "EquYbGjxFFBLM8JUeJG5sgTcg7MndtoKuh"
+    "blockindex": 1,
+    "blockhash": "44962c402e32b4c7445822cfbc69bc87f23510c94fa06f156ac2a3108eae4af9",
+    "txhash": "2809e046afa4d2ddd26234e70d4b6183edf7e4259fc248fd51ee252a3c4a6227,
+    "address": "nM6rc3nJB5iBgFz2J3qVcsr7vWBTAVRoMu"
   },
 
   // market settings
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, ccex
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "EMD",
+    "coin": "NTX",
     "exchange": "BTC",
     "enabled": ["freiexchange", "graviex"],
     "default": "freiexchange"
@@ -128,8 +128,8 @@
   "youtube": "youryoutubechannel",
 
   //genesis
-  "genesis_tx": "a66be980713959b05c01a408aac595e3f5ed029eace6e053c553cf2129ca4c92",
-  "genesis_block": "b297ecb2a87e6a306d0c2bbdbd0402cbb53368c74ac9ed2296c4a7815e599f1c",
+  "genesis_tx": "f3ba67b1f33c825d1a927255feda21d9aee1694c5ab962a191889b2fd1a1f2f6",
+  "genesis_block": "1ceed8ec81dad6ad11062376a36478e2fafac22e3728f1c8b2351b6b3c0a7324",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -150,7 +150,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "COINBASE",
+  "supply": "BALANCES",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
@@ -159,7 +159,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G",
+  "nethash_units": "M",
 
   // Address labels
   // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
